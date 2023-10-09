@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <script>
+        // fetch('https://jsonplaceholder.typicode.com/todos/1').then(response =>
+        //     response.json()).then(json => console.log(json))
+        //     //forma mais usada pra requisições
+
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'post',
+            body: JSON.stringfy({
+                title: 'danki code',
+                body: 'meu conteudo',
+                userID: 10
+            }),
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        })
+            .then(response => response.json())
+            .then(json => console.log(json))
+
+        // essa parte 2 nao funcionou
+
+
+    </script>
+</body>
+
+</html>

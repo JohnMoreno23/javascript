@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Web app Supermercado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: blueviolet;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .lista-cadastro {
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .lista-cadastro input[type=text] {
+            flex: 1;
+            height: 30px;
+            padding-left: 20px;
+        }
+
+        .lista-produto-single {
+            padding: 10px 0;
+            margin: 20px 0;
+            border-bottom: 2px solid #ccc;
+            display: flex;
+        }
+
+        .lista-produto-single h3 {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        h3.price-produto {
+            text-align: right;
+            font-size: 16px;
+        }
+
+        h3.price-produto>span {
+            background-color: crimson;
+            color: whitesmoke;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .soma-produto {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <HEADer>
+        <h2> App Lista de Supermercado</h2>
+    </HEADer>
+
+    <div class="lista-cadastro">
+        <input type="text" placeholder="nome do produto..." name="nome_produto">
+        <input type="number" name="price" step="0.01" title="ate duas casas decimais">
+        <input type="submit" name="acao" value="Cadastrar">
+    </div>
+
+    <div class="lista-produtos">
+        <!-- <div class="lista-produto-single">
+            <h3>Cachaça</h3>
+            <h3 class="price-produto"><span>39,90</span></h3>
+        </div> -->
+
+    </div>
+
+    <div class="soma-produto">
+        <h1>Total: R$ 0</h1>
+    </div>
+
+    <button name="limpar">Limpar</button>
+    <script src="supermercado.js">
+
+    </script>
+</body>
+
+</html>
